@@ -1,0 +1,16 @@
+
+# ~/.clangd
+
+CompileFlags:
+  Add:
+    - -I/home/matt/code/core
+    - -I/opt/libdragon/include
+    - -I/home/matt/code/libdragon/include
+    - -DIMPL
+
+Clangd:
+  HeaderInsertion: never                  # disable automatic #include insertion
+  FunctionArgPlaceholders: false         # disable showing function argument names
+
+InlayHints:
+  Enabled: false

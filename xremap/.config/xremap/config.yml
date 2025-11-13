@@ -1,0 +1,34 @@
+
+keypress_delay_ms: 10
+
+keymap:
+  - name: Text Movement Keymaps
+    remap:
+      KEY_LEFTALT-KEY_LEFT: KEY_LEFTCTRL-KEY_LEFT
+      KEY_LEFTALT-KEY_RIGHT: KEY_LEFTCTRL-KEY_RIGHT
+
+      KEY_LEFTCTRL-KEY_LEFT: KEY_HOME
+      KEY_LEFTCTRL-KEY_RIGHT: KEY_END
+
+      KEY_LEFTCTRL-KEY_UP: KEY_LEFTCTRL-KEY_HOME
+      KEY_LEFTCTRL-KEY_DOWN: KEY_LEFTCTRL-KEY_END
+
+      KEY_LEFTCTRL-KEY_TAB: KEY_LEFTALT-KEY_TAB
+      # 
+      # KEY_LEFTCTRL:
+        # held: KEY_LEFTALT
+
+      KEY_LEFTALT-KEY_3: KEY_RIGHTALT-KEY_3
+
+  - name: Ctrl-C in Terminal
+    application:
+      only: [Kitty]
+    remap:
+      KEY_LEFTMETA-KEY_C: KEY_LEFTCTRL-KEY_C
+
+
+modmap:
+  - name: Swap Control and Super
+    remap:
+      KEY_LEFTCTRL: KEY_LEFTMETA
+      KEY_LEFTMETA: KEY_LEFTCTRL

@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Tokyo Night Dark Enhanced",
+	"editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "window.commandCenter": false,
+    "clangd.checkUpdates": true,
+    "clangd.path": "/home/matt/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "window.titleBarStyle": "native",
+	"window.customTitleBarVisibility": "never",
+    "editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"window.customMenuBarAltFocus": false,
+	"window.enableMenuBarMnemonics": false,
+	"window.menuStyle": "native",
+	"window.menuBarVisibility": "toggle",
+	"explorer.confirmDelete": false
+}

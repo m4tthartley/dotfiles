@@ -1,0 +1,6 @@
+
+[core]
+	excludesfile = ~/.gitignore
+[user]
+	email = m4tthartley@gmail.com
+	name = Matt Hartley
