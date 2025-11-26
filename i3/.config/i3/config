@@ -194,7 +194,7 @@ bindsym $mod+r mode "resize"
 # CUSTOM
 # Swap Cmd and Ctrl
 
-exec_always --no-startup-id feh --bg-fill ~/Pictures/a_foggy_forest_with_trees_03.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/anime/a_person_riding_a_bicycle_on_a_hill_with_sunflowers.jpeg
 exec_always --no-startup-id setxkbmap -layout gb -variant mac
 exec_always --no-startup-id xset r rate 300 30
 exec_always --no-startup-id picom
@@ -211,6 +211,7 @@ bindsym $mod+Return exec wezterm
 bindsym Control+space exec rofi -show drun
 # open rofi power menu
 bindsym Control+Shift+space exec rofi -show powermenu -modi powermenu:~/.config/rofi/rofi-power-menu.sh
+bindsym Control+Shift+Return exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # Catppuccin Mocha colors
 # set $rosewater #f5e0dc
@@ -244,9 +245,9 @@ bindsym Control+Shift+space exec rofi -show powermenu -modi powermenu:~/.config/
 # new_float normal
 # hide_edge_borders smart
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border normal
-for_window [class=".*"] pixel 1
+for_window [class=".*"] pixel 2
 
 for_window [class=".*"] title_format "  %title"
 
