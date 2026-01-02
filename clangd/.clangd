@@ -4,13 +4,14 @@
 CompileFlags:
   Add:
     - -I/home/matt/code/core
-    - -I/opt/libdragon/include
-    - -I/home/matt/code/libdragon/include
+    #- -I/opt/libdragon/include
+    #- -I/home/matt/code/libdragon/include
+    #- -I/home/matt/code/tiny3d/src
     - -DIMPL
 
-Clangd:
-  HeaderInsertion: never                  # disable automatic #include insertion
-  FunctionArgPlaceholders: false         # disable showing function argument names
+#Clangd:
+#  HeaderInsertion: never                  # disable automatic #include insertion
+#  FunctionArgPlaceholders: false         # disable showing function argument names
 
 InlayHints:
   Enabled: false

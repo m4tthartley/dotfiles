@@ -2,6 +2,12 @@ xhost +SI:localuser:root
 export GTK_CSD=0
 
 setxkbmap -layout gb -variant mac
+
+# I3 Stuff
+xrandr --output DP-2 --mode 1600x1200
+xrandr --output DP-2 --left-of DP-0
+
+# Cinnamon Stuff
 export GTK_THEME=Mint-X-Dark
 
 gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-1 "['<Super>1']"
@@ -23,3 +29,6 @@ gsettings set org.gnome.shell.keybindings switch-to-application-6 "[]"
 gsettings set org.gnome.shell.keybindings switch-to-application-7 "[]"
 gsettings set org.gnome.shell.keybindings switch-to-application-8 "[]"
 gsettings set org.gnome.shell.keybindings switch-to-application-9 "[]"
+
+# For getting bluray drive working
+sudo modprobe sg

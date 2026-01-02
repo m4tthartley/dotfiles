@@ -7,4 +7,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 0.2; done
 
 # Launch
-polybar main &
+# polybar main &
+for m in $(polybar --list-monitors | cut -d":" -f1); do
+  MONITOR=$m polybar main &
+done

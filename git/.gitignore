@@ -2,5 +2,6 @@
 .DS_Store
 .vscode/
 build/
+filesystem/
 bin/
 *.z64
