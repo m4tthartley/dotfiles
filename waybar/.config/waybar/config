@@ -1,0 +1,59 @@
+
+
+{
+	"layer": "top",  
+
+	"modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "cpu", "memory", "tray"],
+
+
+	"colors": {
+		"background": "#1e1e2e",
+		"foreground": "#cdd6f4",
+		"active": "#74c7ec",
+		"inactive": "#a6adc8",
+		"urgent": "#fab387",
+		"blue": "#89b4fa",
+		"peach": "#fab387",
+		"base": "#1e1e2e"
+	},
+
+
+	"sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+    },
+
+
+	"date": {
+		"format": "{icon}  {time}",
+		"interval": 1,
+		"format-padding": 2
+	},
+
+	"cpu": {
+		"format": "<span font_family='Font Awesome 5'></span> CPU {usage}%",
+		"interval": 2,
+		"format-padding": 2
+	},
+
+
+	"memory": {
+        "interval": 5,
+        "format": " RAM ({percentage}%) {used:0.2f} GiB",
+        "on-click": "footclient -T waybar_htop -e htop", 
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+	"network": {
+		"format": "NET {icon} {ipaddr}"
+	},
+
+	"tray": {
+		"disable": false
+	}
+}

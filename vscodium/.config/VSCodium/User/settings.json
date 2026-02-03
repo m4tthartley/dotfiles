@@ -11,5 +11,5 @@
 	"window.menuStyle": "native",
 	"window.menuBarVisibility": "hidden",
 	"explorer.confirmDelete": false,
-	"editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace"
+	"editor.fontFamily": "'JetBrains Mono Nerd Font', 'Font Awesome', 'Droid Sans Mono', 'monospace', monospace"
 }

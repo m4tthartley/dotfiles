@@ -1,0 +1,76 @@
+
+@define-color base #1e1e2e;
+@define-color text #cdd6f4;
+@define-color active #89b4fa;
+@define-color alert #fab387;
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* * {
+    font-family: "JetBrainsMono", "Font Awesome 5 Free", mono;
+} */
+
+#waybar {
+	background: transparent;
+	color: @text;
+    font-family: 'JetBrainsMono', 'Font Awesome 7 Free Solid', mono;
+	font-weight: normal;
+    font-size: 14px;
+}
+
+#waybar > box {
+	background: @base;
+	margin-top: 16px;
+	margin-left: 16px;
+	margin-right: 16px;
+	border-radius: 5px;
+}
+
+#window,
+#mode,
+#network,
+#custom-keyboard-layout,
+#idle_inhibitor,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    padding: 0.2rem 1.0rem;
+    margin: 1px 0px;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+    /* border-radius: 5px; */
+    color: @text;
+    /* padding: 1px 6px;
+    margin-right: 2px;
+    margin-left: 2px; */
+	padding: 0 15px;
+}
+#workspaces button.focused {
+    background: @active;
+	color: @base;
+}
+#workspaces button.urgent {
+    background: @alert;
+	color: @base;
+}
+#workspaces button.focused:first-child {
+	border-radius: 5px 0 0 5px;
+}
+#workspaces button.urgent:first-child {
+	border-radius: 5px 0 0 5px;
+}
