@@ -195,7 +195,7 @@ bindsym $mod+r mode "resize"
 # Swap Cmd and Ctrl
 
 exec --no-startup-id xset s 3600
-exec_always --no-startup-id feh --bg-fill ~/Pictures/jurassic-park-movie-2560x1440-15870.jpg
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/water_bubbles.jpg
 exec_always --no-startup-id setxkbmap -layout gb -variant mac
 exec_always --no-startup-id xset r rate 300 30
 exec_always --no-startup-id picom
