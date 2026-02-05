@@ -21,7 +21,7 @@ set $menu wmenu-run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-output * bg ~/Downloads/thumb-1920-689272.jpg fill
+output * bg ~/dotfiles/wallpapers/a_foggy_forest_with_trees.png fill
 #
 # Example configuration:
 #
