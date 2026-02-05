@@ -1,0 +1,10 @@
+
+# Install service files to .config
+stow youtubemeda
+
+# Enable youtube service with timer
+systemctl --user daemon-reload
+systemctl --user enable --now youtube.timer
+
+# Enable linger on my user so the service runs even when logged out
+sudo loginctl enable-linger matt

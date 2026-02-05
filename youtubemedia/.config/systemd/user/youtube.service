@@ -1,0 +1,9 @@
+[Unit]
+Description=YouTube playlist sync via yt-dlp
+
+[Service]
+Type=oneshot
+ExecStart=/mnt/nas/media/youtube/sync.sh
+WorkingDirectory=/mnt/nas/media/youtube
+Nice=10
+IOSchedulingClass=idle
