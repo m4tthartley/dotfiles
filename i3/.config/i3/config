@@ -202,6 +202,8 @@ exec_always --no-startup-id picom
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+bindsym $mod+p exec xfce4-screenshooter
+
 gaps inner 16
 gaps outer 0
 
