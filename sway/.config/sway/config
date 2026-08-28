@@ -53,9 +53,10 @@ output * bg ~/dotfiles/wallpapers/a_foggy_forest_with_trees.png fill
 #       middle_emulation enabled
 #   }
 #
-#   input type:keyboard {
-#       xkb_layout "eu"
-#   }
+input type:keyboard {
+    xkb_layout "gb"
+    xkb_options "ctrl:swap_lalt_lctl_lwin"
+}
 #
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.

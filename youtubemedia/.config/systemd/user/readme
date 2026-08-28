@@ -1,4 +1,8 @@
 
+# Install packages
+yt-dlp
+atomicparsley - needed for embedding thumbnails
+
 # Install service files to .config
 stow youtubemeda
 

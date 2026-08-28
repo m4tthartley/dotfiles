@@ -2,7 +2,9 @@
 Description=Run YouTube sync hourly
 
 [Timer]
-OnCalendar=hourly
+OnCalendar=Hourly
+# *:0/30
+# Hourly
 Persistent=true
 
 [Install]
