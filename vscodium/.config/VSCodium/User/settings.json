@@ -1,8 +1,8 @@
 {
-	"workbench.colorTheme": "Tokyo Night",
+	"workbench.colorTheme": "Tokyo Night Dark Enhanced",
     "window.commandCenter": false,
     "clangd.checkUpdates": true,
-    "clangd.path": "/home/matt/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "clangd.path": "/home/matt/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.0/clangd_22.1.0/bin/clangd",
     "window.titleBarStyle": "custom",
 	"window.customTitleBarVisibility": "never",
     "editor.insertSpaces": false,
