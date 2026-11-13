@@ -225,6 +225,7 @@ workspace 8 output DisplayPort-1
 
 # start a terminal
 bindsym $mod+Return exec wezterm
+bindsym $mod+slash exec nemo
 
 # open rofi
 bindsym Control+space exec rofi -show drun
