@@ -1,6 +1,3 @@
-// ~/.config/quickshell/shell.qml
-// Polybar-style top bar recreated for Quickshell (Hyprland workspaces + PipeWire volume).
-// Needs a Nerd Font (for the icons) and JetBrains Mono (or change `fontFamily`).
 
 import QtQuick
 import QtQuick.Effects
@@ -8,15 +5,10 @@ import Quickshell
 import Quickshell.Io
 import Quickshell.Hyprland
 import Quickshell.Services.Pipewire
+import "."
 
 ShellRoot {
     id: root
-
-    readonly property string fontFamily: "JetBrainsMono Nerd Font"
-    readonly property int fontSize: 17
-
-    // Text shown next to the workspaces (static, edit to taste)
-    readonly property string leftLabel: "Europa"
 
     // ---------- Live data ----------
     property int cpuPercent: 0
@@ -74,6 +66,8 @@ ShellRoot {
         onTriggered: { cpuProc.running = true; memProc.running = true; }
     }
 
+    Launcher {}
+
     // ---------- Bar ----------
     Variants {
         model: Quickshell.screens
@@ -92,7 +86,7 @@ ShellRoot {
             Rectangle {
                 anchors.fill: parent
                 color: Colors.base
-                radius: 5
+                radius: 2
                 // clip: true
                 // contentInsideBorder: true
 
@@ -121,7 +115,7 @@ ShellRoot {
                             property bool isFocused: ws?.active ? true : false //Hyprland.monitorFor(screen).activeWorkspace?.id == (index+1)
                             property bool isUrgent: ws?.urgent ? true : false
                             // property var test: console.log(Hyprland.monitorFor(screen).activeWorkspace)
-                            property var test: console.log(Hyprland.workspaces.values.length)
+                            // property var test: console.log(Hyprland.workspaces.values.length)
 
                             visible: isActive && (ws.monitor.name == screen.name)
                             width: 50
@@ -132,7 +126,7 @@ ShellRoot {
                             Text {
                                 text: index+1
                                 color: isFocused ? Colors.base : Colors.text
-                                font { pixelSize: root.fontSize; family: root.fontFamily; bold: true }
+                                font { pixelSize: Colors.fontSize; family: Colors.font; bold: true }
                                 anchors.centerIn: parent
                             }
 
@@ -149,8 +143,8 @@ ShellRoot {
                     //     anchors.verticalCenter: parent.verticalCenter
                     //     text: root.leftLabel
                     //     color: Colors.text
-                    //     font.family: root.fontFamily
-                    //     font.pixelSize: root.fontSize
+                    //     font.family: Colors.font
+                    //     font.pixelSize: Colors.fontSize
                     // }
                 }
 
@@ -168,8 +162,8 @@ ShellRoot {
                             anchors.verticalCenter: parent.verticalCenter
                             text: "\uf028  " + Math.round(root.volume * 100) + "%"
                             color: Colors.text
-                            font.family: root.fontFamily
-                            font.pixelSize: root.fontSize
+                            font.family: Colors.font
+                            font.pixelSize: Colors.fontSize
                         }
 
                         Item {
@@ -218,8 +212,8 @@ ShellRoot {
                         anchors.verticalCenter: parent.verticalCenter
                         text: "\uf2db  CPU " + root.cpuPercent + "%"
                         color: Colors.text
-                        font.family: root.fontFamily
-                        font.pixelSize: root.fontSize
+                        font.family: Colors.font
+                        font.pixelSize: Colors.fontSize
                     }
 
                     // RAM
@@ -227,8 +221,8 @@ ShellRoot {
                         anchors.verticalCenter: parent.verticalCenter
                         text: "\uefc5  RAM (" + root.ramPercent + "%) " + root.ramUsedGiB.toFixed(2) + " GiB"
                         color: Colors.text
-                        font.family: root.fontFamily
-                        font.pixelSize: root.fontSize
+                        font.family: Colors.font
+                        font.pixelSize: Colors.fontSize
                     }
 
                     // Clock
@@ -236,8 +230,8 @@ ShellRoot {
                         anchors.verticalCenter: parent.verticalCenter
                         text: "\uf017  " + Qt.formatDateTime(clock.date, "ddd dd MMM HH:mm")
                         color: Colors.text
-                        font.family: root.fontFamily
-                        font.pixelSize: root.fontSize
+                        font.family: Colors.font
+                        font.pixelSize: Colors.fontSize
                     }
                 }
             }

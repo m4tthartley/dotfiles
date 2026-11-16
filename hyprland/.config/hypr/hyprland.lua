@@ -23,12 +23,15 @@
 ------------------
 
 -- See https://wiki.hypr.land/configuring/core/monitors/
-hl.monitor({
-    output   = "",
-    mode     = "preferred",
-    position = "auto",
-    scale    = "auto",
-})
+-- hl.monitor({
+--     output   = "",
+--     mode     = "preferred",
+--     position = "auto",
+--     scale    = "auto",
+-- })
+
+hl.monitor({ output = "DP-1", mode = "2560x1440@180", position = "0x0", scale = 1 })
+hl.monitor({ output = "DP-2", mode = "2560x1440@60", position = "2560x0", scale = 1 })
 
 
 ---------------------
@@ -39,7 +42,7 @@ hl.monitor({
 local terminal      = "alacritty"
 local fileManager   = "dolphin"
 local hyprMenu      = "hyprlauncher"
-local myMenu        = "my custom quickshell menu"
+local myMenu        = "quickshell ipc call launcher toggle"
 
 
 -------------------
@@ -115,7 +118,7 @@ hl.config({
 
     decoration = {
         rounding       = 2,
-        rounding_power = 2,
+        rounding_power = 1,
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
