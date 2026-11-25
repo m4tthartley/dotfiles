@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Discord Web App
+Exec=chromium --app=https://discord.com/app --class=discord-web
+Icon=/home/matt/.local/share/applications/discord.png
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=discord-web

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Drift Minami Game
+Exec=chromium --app=https://driftminami.com/ --class=drift-minami
+Type=Application
+Categories=Game;
+StartupWMClass=drift-minami

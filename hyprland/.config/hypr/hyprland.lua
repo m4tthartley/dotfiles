@@ -60,6 +60,7 @@ hl.on("hyprland.start", function ()
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 
     hl.exec_cmd("quickshell")
+    hl.exec_cmd("hyprpaper")
 end)
 
 
@@ -144,6 +145,11 @@ hl.config({
     animations = {
         enabled = true,
     },
+
+    input = {
+	repeat_delay = 250,
+	repeat_rate = 35,
+    }
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/configuring/core/animations/
@@ -231,9 +237,12 @@ hl.config({
     misc = {
         force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_splash_rendering = true,
     },
 })
 
+-- exec_once("hyprpaper")
+-- os.execute("hyprctl hyprpaper wallpaper DP-1, /home/matt/Pictures/ocean_bubbles_1.jpg")
 
 ----------------
 ---- LAYERS ----

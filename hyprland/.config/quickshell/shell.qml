@@ -67,6 +67,7 @@ ShellRoot {
 	}
 
 	Launcher {}
+	Notifications {}
 
 	// ---------- Bar ----------
 	Variants {
@@ -126,7 +127,7 @@ ShellRoot {
 							Text {
 								text: index+1
 								color: isFocused ? Colors.textInverted : Colors.text
-								font { pixelSize: Colors.fontSize; family: Colors.font; bold: true }
+								font { pixelSize: Colors.fontSize; family: Constants.font; bold: true }
 								anchors.centerIn: parent
 							}
 
